@@ -1,0 +1,417 @@
+<div class="container-fluid ps-0">
+  <div class="row pa-0">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+          <ul class="nav nav-tabs">
+              <li class="nav-item" [class.active]="_activeTab === 'home'">
+                  <a class="nav-link" (click)="selectTab('home')" href="javascript:void(0)">Express Time Entry</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="tab-content mt-3">
+          <div *ngIf="_activeTab === 'home'" class="tab-pane" [ngClass]="{'show active': _activeTab === 'home'}">          
+            <div class="container-fluid">
+              <div class="row border-bottom ">
+                <div class="col-lg-7 col-md-7 col-12 ps-0">
+                  <div class="container-fluid pa-0">
+                    <div class="row">
+                      <label class="bold-text text-primary">Timesheet</label>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 col-12">
+                        <p class="semibold-text">Robert Downey Jr.</p>
+                      </div>
+                      <div class="col-md-4 col-12">
+                        <p class="semibold-text"><span class="bold-text">Empl Id:</span> 125855</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-4 col-sm-12">
+                        <p class="semibold-text">Enterprise Technology Manager</p>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                        <p class="semibold-text"><span class="bold-text">Department:</span>4301</p>
+                      </div>
+                      <div class="col-md-4 col-sm-12">
+                        <p class="semibold-text"><span class="bold-text">Group:</span>4301-026</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="container-fluid mt-1">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <h5>Preferences</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <h5>Print Timesheet</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <h5>Help</h5>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                          <h5>Approvals</h5>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12">
+                          <h5>Approval Status:</h5>
+                          <p class="semibold-text">Unapproved</p>
+                        </div>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center mb-3">
+                  <h5 class="mb-0">Pay Period #12</h5>
+                  <select class="form-select form-select-sm pay-period ms-2" aria-label=".form-select-sm example">
+                      <option selected>Select Pay Period</option>
+                      <option value="1">2024-05-26 - 2024-06-08</option>
+                      <option value="2">2024-05-26 - 2024-06-08</option>
+                      <option value="3">2024-05-26 - 2024-06-08</option>
+                  </select>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center mb-3">
+                <h5 class="mb-0">Week #1</h5>
+                <input class="form-control form-control-sm custom-width ms-2" type="text" value="Week of 2024-05-06 to 2024-06-01" aria-label="Disabled input example" disabled readonly>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center mb-3">
+                  <h5 class="mb-0">Week #2</h5>
+                  <input class="form-control form-control-sm custom-width ms-2" type="text" value="Copy Prior Week Into This Week" aria-label="Disabled input example" disabled readonly>
+              </div>
+            </div>
+            <div class="row ">
+              <div class="table-responsive ps-0">
+                <table class="table">
+                    <thead class="table-css">
+                        <tr>
+                            <th scope="col">TRC</th>
+                            <th scope="col">Account code</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Project</th>
+                            <th scope="col">Phase</th>
+                            <th scope="col">Activity</th>
+                            <th scope="col">Sun 05/26</th>
+                            <th scope="col">Mon 05/27</th>
+                            <th scope="col">Tue 05/28</th>
+                            <th scope="col">Wed 05/29</th>
+                            <th scope="col">Thu 05/30</th>
+                            <th scope="col">Fri 05/31</th>
+                            <th scope="col">Total Cmt</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body-css">
+                        <tr *ngFor="let row of rows; let i = index">
+                            <th scope="row">
+                                <select class="form-select form-select-sm custom-form-select-table" aria-label="Default select example">
+                                    <option value="1">HOL-Holiday Leave</option>
+                                    <option value="2">CCL-California COVID Leave</option>
+                                    <option value="3">EXE-Executive Leave</option>
+                                </select>
+                            </th>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="Code">
+                                    <i class="bi bi-search text-primary"></i>
+                                </div>
+                            </td>
+                            <td class="text-xl">
+                                <p class="description pt-2">ITD ADMINISTRATION</p>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                    <i class="bi bi-search text-primary"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                    <i class="bi bi-search text-primary"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <input class="form-control form-control-sm custom-form-text" type="text" placeholder="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center mt-1">
+                                    <span>8:00</span>
+                                    <i class="bi bi-chat text-primary ms-2"></i>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex align-items-center icon-gap">
+                                    <i class="bi bi-dash-circle text-danger" (click)="removeRow(i)"></i>
+                                    <i class="bi bi-plus-circle text-success" (click)="addRow()"></i>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+              <button type="button" class="btn btn-secondary mt-2">Save</button>
+              <div class="mt-3 row">
+                <label class="bold-text text-primary">Totals</label>
+                  <div class="table-responsive ps-0">
+                    <table class="table">
+                      <thead class="table-css ">
+                        <tr>
+                          <th scope="col" class="tableHeading"></th>
+                          <th scope="col" class="tableHeading">Sun 05/26</th>
+                          <th scope="col">Mon 05/27</th>
+                          <th scope="col">Tue 05/28</th>
+                          <th scope="col">Wed 05/29</th>
+                          <th scope="col">Thu 05/30</th>
+                          <th scope="col">Fri 05/31</th>
+                          <th scope="col">Sat 06/01</th>
+                          <th scope="col">Sun 06/02</th>
+                          <th scope="col">Mon 06/03</th>
+                          <th scope="col">Tue 06/04</th>
+                          <th scope="col">Wed 06/05</th>
+                          <th scope="col">Thu 06/06</th>
+                          <th scope="col">Fri 06/07</th>
+                          <th scope="col">Sat 06/08</th>
+                          <th scope="col">Week 1</th>
+                          <th scope="col">Week 2</th>
+                          <th scope="col">Total</th>
+                          <th scope="col">REG</th>
+                          <th scope="col">ABS</th>
+                          <th scope="col">Reg+ABS</th>
+                          <th scope="col">OVT</th>
+                          <th scope="col">OTH</th>
+                          <th scope="col">Units</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-body-css">
+                          <tr>
+                            <th scope="row">
+                              <span>Quantity Reported</span><br>
+                            </th>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              8:00
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              8:00
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              8:00
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              8:00
+                            </td>
+                            <td>
+                              8:00
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">
+                              <span>Scheduled Hours</span>
+                            </th>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              -
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              8
+                            </td>
+                            <td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td><td>
+                              -
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                  </div>
+              </div>
+              <div class="row">
+                <label class="bold-text text-primary">Leave and Compensatory Balances</label>
+                  <div class="table-responsive ps-0 mt-1">
+                    <table class="table ">
+                      <thead class="table-css">
+                        <tr>
+                          <th scope="col">Absence Type</th>
+                          <th scope="col">Current Balance</th>
+                          <th scope="col">Hours REquested</th>
+                          <th scope="col">Estimated Balance</th>  
+                        </tr>
+                      </thead>
+                      <tbody class="table-body-css">
+                        <tr>
+                          <th scope="row">Executive Leave(CSJ)</th>
+                          <td>88.000000</td>
+                          <td>0.000000</td>
+                          <td>0.000000</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Personal</th>
+                          <td>0.000000</td>
+                          <td>0.000000</td>
+                          <td>0.000000</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Sick</th>
+                          <td>128.58400</td>
+                          <td>0.000000</td>
+                          <td>0.000000</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Vacation</th>
+                          <td>192.541000</td>
+                          <td>0.000000</td>
+                          <td>0.000000</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                  </div>
+              </div>   
+            </div>  
+          </div>
+          
+      </div> 
+  </div>
+</div>
+
+
+
+

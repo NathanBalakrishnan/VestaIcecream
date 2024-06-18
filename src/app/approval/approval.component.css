@@ -1,0 +1,36 @@
+.nav-item a.nav-link {
+    color: black; 
+    font-size: 12px; 
+}
+.nav-item.active a.nav-link {
+    color: rgb(31, 95, 148);
+    font-weight: 700;
+    font-size: 12px;
+    background-color:rgb(236, 234, 234);
+}
+.nav-item.default-tab a.nav-link {
+    background-color: black;
+}
+span{
+    font-size: 12px;
+    font-weight:600;
+}
+.tab-title{
+    color: rgb(31, 95, 148);
+    font-size: 20px;
+}
+.custom-form-select{
+    width: 30%;
+}
+.table-heading tr th{
+    font-size: 12px;
+    font-weight: 700;
+}
+.table-body tr th {
+    font-size: 10px;
+    font-weight: 600;
+}
+.table-body tr td {
+    font-size: 10px;
+    font-weight:600;
+}

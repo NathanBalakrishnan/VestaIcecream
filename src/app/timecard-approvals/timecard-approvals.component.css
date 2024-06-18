@@ -1,0 +1,63 @@
+.custom-form-select{
+    width: 30%;
+}
+.tab-title{
+    color: rgb(31, 95, 148);
+    font-size: 20px;
+}
+.custom-form-select{
+    width: 200px;  
+    height: 28px; 
+}
+.custom-group-select{
+    width: 200px;  
+    height: 28px; 
+}
+span{
+    font-size: 12px;
+    font-weight:600;
+}
+.search-btn{
+    background: rgb(248, 193, 110);
+    height: 28px;
+}
+.group-select{
+    width: 280px;
+}
+.custom-pay-select{
+    width: 30%;
+}
+.search-text{
+    width: 100%;
+    height: 28px;
+}
+.selectall-text{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.table-heading tr th{
+    font-size: 11px;
+    font-weight: 700;
+}
+.table-body tr th {
+    font-size: 10px;
+    font-weight: 600;
+}
+.table-body tr td {
+    font-size: 10px;
+    font-weight:600;
+}
+.highlight-green {
+    background-color: rgb(121, 197, 121);
+    color: rgb(20, 11, 11);
+  }
+  .custom-select-wildcard{
+    width: 180px;  
+
+  }
+button{
+    width: fit-content;
+    line-height: 22px; 
+    height: 28px;
+    padding: 0 12px;
+}

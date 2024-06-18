@@ -1,0 +1,87 @@
+.border-bottom {
+    border-bottom: 1px solid #000;
+}
+.nav-item a.nav-link {
+    color: black; 
+    font-size: 14px; 
+}
+.nav-item.active a.nav-link {
+    color: rgb(31, 95, 148);
+    font-weight: 700;
+    font-size: 14px;
+    background-color:rgb(236, 234, 234);
+}
+.nav-item.default-tab a.nav-link {
+    background-color: black;
+    
+}
+.bold-text {
+    font-weight: 700;
+    color: #585858;
+}
+.semibold-text{
+    font-weight:400; 
+    font-size: 14px;
+}
+.custom-width {
+    width: 75%; 
+    max-width: 280px;
+}
+
+.custom-form-select-table{
+ width: 100px;   
+}
+.pay-period{
+    width: 210px;
+}
+.custom-form-text{
+    width: 60px; 
+}
+h5{
+    font-size: 14px;
+}
+label{
+    font-size: 20px; 
+}
+.bi-search{
+    font-size:14px;
+    padding:5px;
+    font-weight: 700;
+    background: #e9e9e9e0;
+}
+button{
+    width: fit-content;
+    line-height: 22px; 
+    height: 28px;
+    padding: 0 12px;
+}
+.description{
+    font-size: 10px;
+}
+.bi-dash-circle{
+    font-weight: 600;
+    font-size: 20px;
+}
+.bi-plus-circle{
+    font-weight: 600;
+    font-size: 20px;
+}
+.icon-gap i {
+    margin-right: 10px;
+}
+.icon-gap i:last-child {
+    margin-right: 0; 
+}
+.table thead tr th{
+    font-size: 12px;
+    color: #494949;
+    font-weight: 700;
+}
+.table-body-css tr th{
+    font-size: 10px;
+    font-weight:500;
+} 
+.table-body-css tr td{
+    font-size: 10px;
+    font-weight:500;
+} 
