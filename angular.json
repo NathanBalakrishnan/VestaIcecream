@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "BaseApp": {
+    "SS-Poportal-v1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/base-app",
+            "outputPath": "dist/ss-poportal-v1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,14 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/datatables.net-dt/css/jquery.dataTables.css",
-              "src/styles.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/datatables.net/js/jquery.dataTables.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -65,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "BaseApp:build:production"
+              "browserTarget": "SS-Poportal-v1:build:production"
             },
             "development": {
-              "browserTarget": "BaseApp:build:development"
+              "browserTarget": "SS-Poportal-v1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "BaseApp:build"
+            "browserTarget": "SS-Poportal-v1:build"
           }
         },
         "test": {

@@ -1,28 +1,45 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+
 declare var jQuery: any;
+
 @Component({
   selector: 'app-memberlogin',
   templateUrl: './memberlogin.component.html',
   styleUrls: ['./memberlogin.component.css']
 })
-export class MemberloginComponent {
+export class MemberloginComponent implements OnInit {
 
-  constructor(private router: Router) {
-
-  }
-  ngOnInit() {
-    jQuery(".sidebar-wrapper").hide();
-    jQuery("#nav-bar-header").hide();
-    jQuery(".page-footer").hide();
-    jQuery("header").hide();
-    jQuery(".page-wrapper").addClass("page-wrapper-none");
-    jQuery(".page-wrapper-none").removeClass("page-wrapper");
+  ngOnInit(): void {
+    this.initializeJQuery();
   }
 
-  signIn() {
-    localStorage.setItem("login", "yes");
-    this.router.navigateByUrl('dashboard');
+  initializeJQuery(): void {
+    jQuery(document).ready(() => {
+      jQuery("#signIn").show();
+      jQuery("#signUp").hide();
+      jQuery("#frmBlock").removeClass("form-block-si");
+      jQuery("#frmBlock").removeClass("form-block");
+      jQuery("#frmBlock").addClass("form-block-si");
+    });
   }
 
+  showSignUp(): void {
+    jQuery("#frmBlock").removeClass("form-block-si");
+    jQuery("#frmBlock").removeClass("form-block");
+    jQuery("#frmBlock").addClass("form-block");
+    jQuery("#signIn").hide();
+    jQuery("#signUp").show();
+  }
+
+  showSignIn(): void {
+    jQuery("#frmBlock").removeClass("form-block-si");
+    jQuery("#frmBlock").removeClass("form-block");
+    jQuery("#frmBlock").addClass("form-block-si");
+    jQuery("#signIn").show();
+    jQuery("#signUp").hide();
+  }
+
+  signIn(): void {
+    window.location.href = "index.html";
+  }
 }

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'BaseApp'`, () => {
+  it(`should have as title 'SS-Poportal-v1'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('BaseApp');
+    expect(app.title).toEqual('SS-Poportal-v1');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('BaseApp app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('SS-Poportal-v1 app is running!');
   });
 });

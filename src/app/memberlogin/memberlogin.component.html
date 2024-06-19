@@ -1,61 +1,112 @@
-<!--wrapper-->
-<div class="wrapper">
-    <div class="section-authentication-signin d-flex align-items-center justify-content-center my-5 my-lg-0">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
-                <div class="col mx-auto">
-                    <div class="card mb-0">
-                        <div class="card-body">
-                            <div class="p-4">
-                                <div class="mb-3 text-center">
-                                    <img src="https://codeenforcementapp.web.app/assets/images/SJ_color_logo.png"
-                                        width="100" alt="" />
-                                </div>
-                                <div class="text-center mb-4">
-                                    <h5 class="">Staff / Inspector Login</h5>
-                                    <p class="mb-0">Please log in to your account</p>
-                                </div>
-                                <div class="form-body">
-                                    <form class="row g-3">
-                                        <div class="col-12">
-                                            <label for="inputEmailAddress" class="form-label">User Name</label>
-                                            <input type="email" class="form-control" id="inputEmailAddress"
-                                                placeholder="jhon@example.com">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputChoosePassword" class="form-label">Password</label>
-                                            <div class="input-group" id="show_hide_password">
-                                                <input type="password" class="form-control border-end-0"
-                                                    id="inputChoosePassword" value="12345678"
-                                                    placeholder="Enter Password"> <a href="javascript:;"
-                                                    class="input-group-text bg-transparent"><i
-                                                        class='bx bx-hide'></i></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-check form-switch">
-                                                <input class="form-check-input" type="checkbox"
-                                                    id="flexSwitchCheckChecked">
-                                                <label class="form-check-label" for="flexSwitchCheckChecked">Remember
-                                                    Me</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 text-end">Forgot Password ?</div>
-                                        <div class="col-12">
-                                            <div class="d-grid">
-                                                <a type="submit" (click)="signIn()" class="btn btn-primary">Sign
-                                                    in</a>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+<div class="d-md-flex half">
+    <div class="contents">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-12">
+            <div class="mx-auto form-block-si" id="frmBlock">
+              <div class="text-center mb-5">
+                <h3><span class="primary-text-color"><strong>SOFT STORY RETROFIT ORDINANCE & PROGRAM</strong></span>
+                </h3>
+                <span>(PLANNING, BUILDING & CODE ENFORCEMENT)</span>
+                <h4>Login into your account</h4>
+                <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
+              </div>
+              <form action="#" class="signIn" method="post" id="signIn">
+                <div class="form-group first">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" placeholder="your-email@example.com" id="username">
                 </div>
+                <div class="form-group last mb-3">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" placeholder="Your Password" id="password">
+                </div>
+
+                <div class="d-sm-flex mb-5 align-items-center">
+                  <label class="control control--checkbox mb-3 mb-sm-0"><span class="caption">Remember me</span>
+                    <input type="checkbox" checked="checked" />
+                    <div class="control__indicator"></div>
+                  </label>
+                  <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+                </div>
+                <div class="d-sm-flex mb-5 justify-content-center">
+                  <a class="forgot-pass" onclick="showSignUp()" style="cursor: pointer;">Sign Up</a>
+                </div>
+
+                <input type="button" value="Log In" onclick="signIn()" class="btn btn-block btn-primary">
+
+              </form>
+              <form action="#" method="post" class="signUp" id="signUp">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group first">
+                      <label for="username">Salutation</label>
+                      <select class="form-control">
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                      </select>
+                    </div>
+                    <div class="form-group first">
+                      <label for="username">Full Name</label>
+                      <input type="text" class="form-control" placeholder="" id="username">
+                    </div>
+                    <div class="form-group first">
+                      <label for="username">Contact Address</label>
+                      <textarea class="form-control col-md-12" rows="3"></textarea>
+                    </div>
+                    <div class="form-group first">
+                      <label for="username">Telephone Number</label>
+                      <input type="text" class="form-control" placeholder="" id="username">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group first">
+                      <label for="username">Email Address (User Name)</label>
+                      <input type="text" class="form-control" placeholder="" id="username">
+                    </div>
+                    <div class="form-group first">
+                      <label for="username">Confirm Email Address</label>
+                      <input type="text" class="form-control" placeholder="" id="username">
+                    </div>
+                    <div class="form-group first">
+                      <label for="username">Password</label>
+                      <input type="text" class="form-control" placeholder="" id="username">
+                    </div>
+                    <div class="form-group last mb-3">
+                      <label for="password">Confirm Password</label>
+                      <input type="password" class="form-control" placeholder="" id="password">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group first">
+                      <label for="username">Remarks (if any)</label>
+                      <textarea class="form-control col-md-12" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="d-sm-flex mb-5 justify-content-center">
+                  <a href="#" class="forgot-pass" style="cursor: pointer;" onclick="showSignIn()">Sign In</a>
+                </div>
+
+                <input type="submit" value="Sign Up" class="btn btn-block btn-primary">
+
+              </form>
+              <hr />
+              <div class="col-md-12 text-center">
+                <h4>Powered By </h4>
+                <img src="assets/img/sanjose.png" width="175" />
+
+              </div>
             </div>
-            <!--end row-->
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!--end wrapper-->
+
+
+  </div>
+
