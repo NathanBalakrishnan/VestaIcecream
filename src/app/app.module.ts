@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MemberloginComponent } from './memberlogin/memberlogin.component';
 import { HomeComponent } from './home/home.component';
 import { ScreeningFormsComponent } from './screening-forms/screening-forms.component';
+import { ExploreIceCreamComponent } from './explore-ice-cream/explore-ice-cream.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MemberloginComponent,
     HomeComponent,
-    ScreeningFormsComponent
+    ScreeningFormsComponent,
+    ExploreIceCreamComponent
   ],
   imports: [
     BrowserModule,

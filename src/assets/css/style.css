@@ -78,7 +78,7 @@ a:focus {
 .top-bar {
     position: relative;
     height: 90px;
-    background: #d0b024;
+    background:#ffffff;
 }
 
 .top-bar .logo {
@@ -155,7 +155,7 @@ a:focus {
 /**********************************/
 .nav-bar {
     position: relative;
-    background: #d0b024;
+    background: #ffffff;
     transition: .3s;
 }
 
@@ -174,7 +174,7 @@ a:focus {
 
 .nav-bar .navbar {
     height: 100%;
-    background: #013b49 !important;
+    background: #792776 !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -189,6 +189,9 @@ a:focus {
 .navbar-dark .navbar-nav .nav-link.active {
     color: #d0b024;
     transition: none;
+}
+.heading-color{
+    color: #792776 !important;
 }
 
 .nav-bar .dropdown-menu {
@@ -470,6 +473,9 @@ a:focus {
     width: 100%;
     margin-bottom: 45px;
 }
+.section-header h2{
+  color: #792776;
+}
 
 .section-header p {
     color: #d0b024;
@@ -668,13 +674,13 @@ a:focus {
     margin: 0;
     font-size: 60px;
     line-height: 60px;
-    background-image: linear-gradient(#ffffff, #d0b024);
+    background-image: linear-gradient(#d5e72e, #792776);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .fact .fact-right .fact-icon [class^="flaticon-"]::before {
-    background-image: linear-gradient(#ffffff, #013b49);
+    background-image: linear-gradient(#d5e72e, #792776);
 }
 
 .fact .fact-left,
@@ -696,17 +702,19 @@ a:focus {
 }
 
 .fact .fact-left {
-    color: #d0b024;
-    background: #013b49;
+    color: #792776;
+  
 }
 
 .fact .fact-right {
-    color: #013b49;
-    background: #d0b024;
+    color: #792776; 
 }
 
 .fact .fact-left h2 {
-    color: #d0b024;
+    color: #013b49;
+}
+.fact .fact-right h2 {
+    color: #013b49;
 }
 
 
@@ -763,7 +771,7 @@ a:focus {
     display: flex;
     align-items: center;
     height: 60px;
-    background: #013b49;
+    background: #792776;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
