@@ -39,7 +39,7 @@ export class ExploreIceCreamComponent implements OnInit {
         "id": 4,
         "flavourName": "Fundae Chocolate",
         "description": "If you have not seen what fun in a bucket is, then you should try our chocolate fundae. Ice cream made with natural ingredients, with added dry fruits and syrup, makes the ice cream amazingly lick-a-licsious.",
-        "imagepath": "Fundae-choclate.png"
+        "imagepath": "fundae-chocolate.png"
       },
       {
         "id": 5,

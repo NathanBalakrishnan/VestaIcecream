@@ -235,7 +235,7 @@ export class ProductviewService {
         "id": 6,
         "flavourName": "Strawberry 1l and 500 ml",
         "description": "Ice cream can never be too much, we now present to you, strawberry ice cream bucket. Enjoy the delicious natural flavour of strawberries with your loved ones.",
-        "imagepath": "Strawberry 500ml.png"
+        "imagepath": "strawberry 500ml.png"
       },
       {
         "id": 7,

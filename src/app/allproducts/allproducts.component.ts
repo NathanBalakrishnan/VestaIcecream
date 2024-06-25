@@ -16,6 +16,6 @@ export class AllproductsComponent {
   selectedView: string = 'All';
   productView(val: string) {
     this.selectedView = val;
-    this.router.navigate(['all-products/product-view'], { queryParams: { filter: val } });
+    this.router.navigate(['All-Products/View'], { queryParams: { Categories: val } });
   }
 }

@@ -15,41 +15,41 @@ export class ProductviewComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
-      console.log("Filter parameter:", params['filter']);
-      if (params['filter'] === "All") {
+     
+      if (params['Categories'] === "All") {
         this.products = this.productView.getData().datafieldAll;
       }
-      else if (params['filter'] === "Tub 1l & 500ml") {
+      else if (params['Categories'] === "Tub_1l_and_500ml") {
         this.products = this.productView.getData().datafield2;
       }
-      else if (params['filter'] === "Conevita big 100ml & small 60ml") {
+      else if (params['Categories'] === "Conevita_big_100ml_and_small_60ml") {
         this.products = this.productView.getData().datafield3;
       }
-      else if (params['filter'] === "Fruitae 50ml") {
+      else if (params['Categories'] === "Fruitae_50ml") {
         this.products = this.productView.getData().datafield4;
       }
-      else if (params['filter'] === "Ice Crush 50ml") {
+      else if (params['Categories'] === "Ice_Crush_50ml") {
         this.products = this.productView.getData().datafield5;
       }
-      else if (params['filter'] === "Milk Lolly 60ml") {
+      else if (params['filter'] === "Milk_Lolly_60ml") {
         this.products = this.productView.getData().datafield6;
       }
-      else if (params['filter'] === "Ice Cream Bar 70ml") {
+      else if (params['Categories'] === "Ice_Cream_Bar_70ml") {
         this.products = this.productView.getData().datafield7;
       }
-      else if (params['filter'] === "Sundae 125ml") {
+      else if (params['Categories'] === "Sundae_125ml") {
         this.products = this.productView.getData().datafield8;
       }
-      else if (params['filter'] === "Fundae 150ml") {
+      else if (params['Categories'] === "Fundae_150ml") {
         this.products = this.productView.getData().datafield9;
       }
-      else if (params['filter'] === "Ball") {
+      else if (params['Categories'] === "Ball") {
         this.products = this.productView.getData().datafield10;
       }
-      else if (params['filter'] === "Paper Cup") {
+      else if (params['Categories'] === "Paper_Cup") {
         this.products = this.productView.getData().datafield11;
       }
-      else if (params['filter'] === "Bulk Pack 4l") {
+      else if (params['Categories'] === "Bulk_Pack_4l") {
         this.products = this.productView.getData().datafield12;
       }
     });
