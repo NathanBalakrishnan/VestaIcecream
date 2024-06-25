@@ -1,82 +1,12 @@
 <div class="wrapper">
-    <!-- Top Bar Start -->
-    <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-12">
-                    <div class="logo">
-                        <a href="index.html">
-                            <h3 class="headTitle">Thanga Athiya Agency</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-7 d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="top-bar-item">
-                                <div class="top-bar-icon">
-                                    <i class="flaticon-calendar"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h3>Opening Hour</h3>
-                                    <p>Mon - Sun, 8:00 AM - 9:00 PM</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item">
-                                <div class="top-bar-icon">
-                                    <i class="flaticon-call"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h3>Call Us</h3>
-                                    <p>+91 9443270113</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="top-bar-item">
-                                <div class="top-bar-icon">
-                                    <i class="flaticon-send-mail"></i>
-                                </div>
-                                <div class="top-bar-text">
-                                    <h3>Email Us</h3>
-                                    <p>info@example.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top Bar End -->
-
-    <!-- Nav Bar Start -->
-    <div class="nav-bar">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <a href="#" class="navbar-brand">MENU</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav mr-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="/screening-form" class="nav-item nav-link">Screening Form</a>
-
-                    </div>
-                  
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- Nav Bar End -->
+ 
     <div class="container-fluid d-flex justify-content-center align-items-center vh-100 full-height mb-0">
         <div class="row">
             <div class="col-12 col-sm-10 col-md-12 col-lg-12">
                 <img src="../../assets/img/vesta-products-main.png" class="img-fluid mx-auto d-block" alt="Product Image"/>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-light btn-style p-2" [routerLink]="['/all-products']">View All Products</button>
             </div>
         </div>
     </div>
@@ -85,7 +15,7 @@
     <!-- Fact Start -->
     <div class="fact">
         <div class="container-fluid">
-            <div class="row counters">
+            <div class="row counters mt-0">
                 <div class="col-md-6 fact-left wow slideInLeft">
                     <div class="row">
                         <div class="col-6">
@@ -103,7 +33,7 @@
                             </div>
                             <div class="fact-text">
                                 <h2 data-toggle="counter-up">500+</h2>
-                                <p>Dealers</p>
+                                <p>Sub Dealers</p>
                             </div>
                         </div>
 
@@ -123,7 +53,8 @@
                         </div>
                         <div class="col-6">
                             <div class="fact-icon">
-                                <i class="fas fa-hamburger icon"></i>
+                            
+                                <i class="fa-solid fa-mortar-pestle"></i>
                             </div>
                             <div class="fact-text">
                                 <h2 data-toggle="counter-up">30+</h2>
@@ -137,169 +68,7 @@
     </div>
     <!-- Fact End -->
      <app-explore-ice-cream></app-explore-ice-cream>
-    <!-- Team Start -->
-    <div class="team">
-        <div class="container">
-            <div class="section-header text-center">
-                <p>Our Team</p>
-                <h2>My Licensed Engineers</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/lec/lec1.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Adam Phillips</h2>
-                            <p>Licensed Engineer</p>
-                        </div>
+     <app-ourshop></app-ourshop>
+     <app-viewvideos></app-viewvideos>
 
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/lec/lec2.webp" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Dylan Adams</h2>
-                            <p>Licensed Engineer</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/lec/lec3.jpeg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Jhon Doe</h2>
-                            <p>Licensed Engineer</p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="team-item">
-                        <div class="team-img">
-                            <img src="assets/img/lec/lec4.jpg" alt="Team Image">
-                        </div>
-                        <div class="team-text">
-                            <h2>Josh Dunn</h2>
-                            <p>Licensed Engineer</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-
-
-    <!-- Blog Start -->
-    <div class="blog">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2>Approved Property</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <img src="assets/img/property/property09.png" alt="Image">
-                        </div>
-                        <div class="blog-title">
-                            <h3>Property A</h3>
-                            <a class="btn" href="">+</a>
-                        </div>
-                        <div class="blog-meta">
-                            <p>By<a href="">Compliance Group</a></p>
-                            <p>-<a href="">Approved</a></p>
-                        </div>
-                        <div class="blog-text">
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
-                                ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <img src="assets/img/property/property08.webp" alt="Image">
-                        </div>
-                        <div class="blog-title">
-                            <h3>Property B</h3>
-                            <a class="btn" href="">+</a>
-                        </div>
-                        <div class="blog-meta">
-                            <p>By<a href="">Compliance Group</a></p>
-                            <p>-<a href="">Approved</a></p>
-                        </div>
-                        <div class="blog-text">
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
-                                ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="blog-item">
-                        <div class="blog-img">
-                            <img src="assets/img/property/property07.webp" alt="Image">
-                        </div>
-                        <div class="blog-title">
-                            <h3>Property C</h3>
-                            <a class="btn" href="">+</a>
-                        </div>
-                        <div class="blog-meta">
-                            <p>By<a href="">Compliance Group</a></p>
-                            <p>-<a href="">Approved</a></p>
-                        </div>
-                        <div class="blog-text">
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis
-                                ornare velit non vulputate. Aliquam metus tortor
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Blog End -->
-
-
-    <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
-
-        <div class="container footer-menu">
-            <div class="f-menu">
-                <a href="">Terms of use</a>
-                <a href="">Privacy policy</a>
-                <a href="">Cookies</a>
-                <a href="">Help</a>
-                <a href="">FQAs</a>
-            </div>
-        </div>
-        <div class="container copyright">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; <a href="#"></a>, All Right Reserved.</p>
-                </div>
-                <div class="col-md-6">
-                    <p>Designed By </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 </div>

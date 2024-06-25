@@ -4,8 +4,19 @@
 .fact-icon{
     font-size: 50px;
 }
-.headTitle{
-    font-size: 24px;
+.btn-style{
     color: #d0b024;
-    font-weight: 800;
+    font-weight: 600;
 }
+.btn-style {
+    border: 2px solid gray; /* Black border with 2px width */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for better appearance */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .btn-style:hover {
+    background-color: #792776; /* Light gray background on hover */
+    border-color: #333; /* Darker border color on hover */
+  }
+  

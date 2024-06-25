@@ -1,0 +1,9 @@
+.headTitle{
+    font-size: 24px;
+    color: #d0b024;
+    font-weight: 800;
+}
+.logo-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }

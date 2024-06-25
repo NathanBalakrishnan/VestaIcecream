@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="section-header text-center mt-3">
+        <h3 class="wow fadeInUp" data-wow-delay="0.1s">- All Products -</h3>
+    </div>
+    <div class="row">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <div class="d-flex header gap-3">
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'All'" 
+                   (click)="productView('All')">All</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Tub 1l & 500ml'" 
+                   (click)="productView('Tub 1l & 500ml')">Tub 1l & 500ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Conevita big 100ml & small 60ml'" 
+                   (click)="productView('Conevita big 100ml & small 60ml')">Conevita big 100ml & small 60ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Fruitae 50ml'" 
+                   (click)="productView('Fruitae 50ml')">Fruitae 50ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Ice Crush 50ml'" 
+                   (click)="productView('Ice Crush 50ml')">Ice Crush 50ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Milk Lolly 60ml'" 
+                   (click)="productView('Milk Lolly 60ml')">Milk Lolly 60ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Ice Cream Bar 70ml'" 
+                   (click)="productView('Ice Cream Bar 70ml')">Ice Cream Bar 70ml</p>
+              </div>
+              <div class="d-flex gap-3 header">
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Sundae 125ml'" 
+                   (click)="productView('Sundae 125ml')">Sundae 125ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Fundae 150ml'" 
+                   (click)="productView('Fundae 150ml')">Fundae 150ml</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Ball'" 
+                   (click)="productView('Ball')">Ball</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Paper Cup'" 
+                   (click)="productView('Paper Cup')">Paper Cup</p>
+                <p class="item-menu" 
+                   [class.selected]="selectedView === 'Bulk Pack 4l'" 
+                   (click)="productView('Bulk Pack 4l')">Bulk Pack 4l</p>
+              </div>              
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

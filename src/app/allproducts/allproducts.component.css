@@ -1,0 +1,23 @@
+.header {
+    flex-wrap: wrap;
+}
+
+.item-menu {
+    cursor: pointer;
+    padding: 2px 8px;
+    text-align: center;
+    font-size: 1rem; /* Default font size */
+    border:solid 1px gray;
+}
+
+@media (max-width: 767px) {
+    .item-menu {
+        flex: 1 0 30%; /* Adjust flex to fit 3 items per row */
+        font-size: 0.75rem; /* Smaller font size for mobile */
+        padding: 0;
+    }
+}
+.item-menu.selected {
+    background-color: #792776;
+    color:white
+  }

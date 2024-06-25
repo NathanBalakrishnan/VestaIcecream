@@ -4,7 +4,7 @@
 body {
     color: #ffffff;
     background: #013b49;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Manrope, sans-serif';
     font-weight: 400;
 }
 
@@ -37,7 +37,7 @@ a:focus {
 .wrapper {
     position: relative;
     width: 100%;
-    max-width:100%;
+    max-width: 1366px;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -93,6 +93,12 @@ a:focus {
     font-size: 60px;
     line-height: 60px;
     font-weight: 700;
+}
+.logo h3{
+    font-size: 24px;
+    font-weight: 900;
+    color: #d0b024;
+    margin-top: 5px;
 }
 
 .top-bar .logo img {
@@ -167,7 +173,7 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 100%;
+    max-width: 1366px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 999;
 }
@@ -232,7 +238,8 @@ a:focus {
 
     .nav-bar a.nav-link {
         padding: 8px 15px;
-        font-size: 15px;
+        font-size: 12px;
+        font-weight: 600;
         text-transform: uppercase;
     }
 }
@@ -473,9 +480,14 @@ a:focus {
     width: 100%;
     margin-bottom: 45px;
 }
-.section-header h2{
+.section-header h3{
   color: #792776;
 }
+.header p{
+    color: rgb(97, 96, 96);
+    font-size: 18px;
+    font-weight: 600;
+  }
 
 .section-header p {
     color: #d0b024;
@@ -484,10 +496,10 @@ a:focus {
     margin-bottom: 5px;
 }
 
-.section-header h2 {
+.section-header h3 {
     margin: 0;
     position: relative;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 700;
 }
 
@@ -775,6 +787,7 @@ a:focus {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    border-radius: 4px;
 }
 
 .service .service-text h3 {
@@ -782,6 +795,18 @@ a:focus {
     padding: 0 15px 0 25px;
     width: calc(100% - 60px);
     font-size: 20px;
+    font-weight: 700;
+    color: #d0b024;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.service .service-text h5 {
+    margin: 0;
+    padding: 0 15px 0 25px;
+    width: calc(100% - 60px);
+    font-size: 14px;
     font-weight: 700;
     color: #d0b024;
     text-align: left;
@@ -2069,7 +2094,7 @@ a:focus {
     position: relative;
     margin-top: 45px;
     padding-top: 90px;
-    background: #013b49;
+    background: #792776;
     color: #ffffff;
 }
 
@@ -2088,17 +2113,6 @@ a:focus {
     font-weight: 600;
     color: #d0b024;
 }
-
-.footer h2::after {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 2px;
-    left: 0;
-    bottom: 0;
-    background: #d0b024;
-}
-
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
