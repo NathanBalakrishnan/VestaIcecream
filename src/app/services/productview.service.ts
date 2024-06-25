@@ -7,7 +7,6 @@ export class ProductviewService {
 
   constructor() { }
   private data = {
-    title: "deeefefef",
     datafieldAll: [
       {
         "id": 1,
